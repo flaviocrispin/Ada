@@ -24,7 +24,15 @@ dados['idade'] = 31
 dados['email'] = 'email@email.com'
 print(dados)
 
+
+
 '''
 3. Escreva um código que pergunte ao usuário o nome de um produto e seu preço. 
 Guarde essas informações em um dicionário e exiba-o no final.
 '''
+nome = input('Digite o nome do produto: ')
+preco = float(input('Digite o preço do produto: '))
+
+info_produto = {nome: preco}
+
+print(info_produto)
