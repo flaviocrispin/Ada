@@ -1,23 +1,19 @@
 import os
 os.system('cls' if os.name == 'nt' else 'clear')
+"""
+4.Dado o dicionário:
+frutas = {"maçã": 3, "banana": 5, "laranja": 2}
+Escreva um código que:
+- Peça ao usuário o nome de uma fruta.
+- Verifique se a fruta está no dicionário.
+- Se estiver, mostre quantas unidades têm.
+Caso contrário, diga que a fruta não está disponível.
+"""
 
-lista1 = [1, 2, 3, 4, 5]
-print (lista1)
+aluno = {'nome':'Mario', 'notas':[7, 9, 5, 6], 'presencas':0.8}
 
-aluno = {'nome':'Mario', 'notas':[7, 9, 5, 6], 'presencas':0.8, "endereço"}
+chaves = list(aluno.keys())
+valores = list(aluno.values())
 
-print(f"Aluno: {aluno['nome']}") # Aluno: Mario
-print(f"Notas: {aluno['notas'][0]}") # Notas: [7, 9, 5, 6]
-
-notas = dict(Ana = "7", Brenda = 10, Carlos = 8, Diana = 9)
-print(notas) # resultado: {'Ana': 7, 'Brenda': 10, 'Carlos': 8}
-
-lista = [['Ana', 7], ['Brenda', 10], ['Carlos', 8]]
-dicionario = dict(lista)
-print(dicionario)
-
-nomes = ['Ana', 'Brenda', 'Carlos', 'Diana']
-notas = [7, 10, 8, 7]
-endereco = ['Rua A', 'Rua B', 'Rua C', 'Rua D']
-dicionario_notas = dict(zip(nomes, notas)
-print(dicionario_notas)
+print('Chaves: ', chaves)
+print('Valores:', valores)
