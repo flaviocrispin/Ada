@@ -1,4 +1,4 @@
-# Compreensão de listas e expressões geradoras
+# Compreensão de listas 
 
 Muito do que estudamos até o momento em Python pode ser reproduzido de maneira parecida em outras linguagens. Comandos como `if`, `else`, `while` e `for`, bem como conceitos como criar funções, passar parâmetros e retornar valores são comuns a uma infinidade de linguagens de programação.
 
@@ -70,8 +70,8 @@ Podemos também utilizar `else` na expressão. Vejamos mais um exemplo:
 Considere que são aceitos números quebrados no exemplo das metades. Porém, não queremos utilizar o tipo `float` desnecessariamente. Portanto, faremos uma divisão **inteira** quando o número for par (para que o resultado seja int) e uma divisão **real** quando o número for ímpar (para que o resultado seja float). A expressão ficaria assim:
 
 ```py
-metades_tipo = [n//2 if n % 2 == 0 else n/2 for n in numeros]
 
+metades_tipo = [n//2 if n % 2 == 0 else n/2 for n in numeros]
 print(metades_tipo)
 ```
 
