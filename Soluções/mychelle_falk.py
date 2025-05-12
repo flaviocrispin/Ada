@@ -39,11 +39,7 @@ Guarde essas informações em um dicionário e exiba-o no final.
 # print(info_produto)
 
 
-
 # -----------------------------------------------------------------------------
-
-
-
 
 # Módulo 01 - Aula 02 - Dicionários - 07/05/2025 
 
@@ -78,3 +74,65 @@ Depois, mostre apenas os alunos com média maior ou igual a 7.
 # for chave in notas_alunos:
 #   if notas_alunos[chave] >= 7:
 #     print(f'{chave}: {notas_alunos[chave]}')
+
+
+# -----------------------------------------------------------------------------
+
+# Módulo 01 - Aula 03 - Dicionários - 09/05/2025 
+
+'''
+6. Crie uma lista com os quadrados dos números de 0 a 9.
+'''
+
+# quadrados = [num**2 for num in range(10)]
+# print(quadrados)
+
+
+
+'''
+7. A partir da lista 'nums = list(range(20))', crie uma nova lista apenas com os números pares.
+'''
+
+# nums = list(range(20))
+
+# numeros_pares = [num for num in nums if num % 2 == 0]
+
+# print(numeros_pares)
+
+
+
+'''
+8. Dada a lista palavras = ["python", "é", "legal"], crie uma nova lista com todas as palavras em maiúsculas.
+'''
+
+# palavras = ["python", "é", "legal"]
+
+# maiusculo = [letra.upper() for letra in palavras]
+
+# print(maiusculo)
+
+
+
+'''
+9. Você faz parte do time de dados da Globo, e está recebendo uma lista com os nomes dos programas e suas respectivas audiências em 
+pontos de ibope, de uma semana. Seu objetivo é gerar um dicionário onde:
+
+A chave seja o nome do programa.
+O valor seja uma classificação textual baseada na audiência:
+'Alta' se audiência ≥ 25
+'Média' se audiência entre 15 e 24
+'Baixa' se audiência < 15
+'''
+
+# audiencia = [
+#   ("Jornal Nacional", 30),
+#   ("Big Brother Brasil", 28),
+#   ("Altas Horas", 18),
+#   ("Sessão da Tarde", 12),
+#   ("É de Casa", 14),
+#   ("Fantástico", 26)
+# ]
+
+# dict_audiencia = {chave: ('Alta' if valor >= 25 else ('Média' if valor > 15 else 'Baixa')) for chave, valor in audiencia}
+
+# print(dict_audiencia)
