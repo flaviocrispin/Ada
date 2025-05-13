@@ -78,7 +78,7 @@ Depois, mostre apenas os alunos com média maior ou igual a 7.
 
 # -----------------------------------------------------------------------------
 
-# Módulo 01 - Aula 03 - Dicionários - 09/05/2025 
+# Módulo 01 - Aula 03 - Compreensão de Listas - 09/05/2025 
 
 '''
 6. Crie uma lista com os quadrados dos números de 0 a 9.
@@ -136,3 +136,75 @@ O valor seja uma classificação textual baseada na audiência:
 # dict_audiencia = {chave: ('Alta' if valor >= 25 else ('Média' if valor > 15 else 'Baixa')) for chave, valor in audiencia}
 
 # print(dict_audiencia)
+
+
+# -----------------------------------------------------------------------------
+
+# Módulo 01 - Aula 04 - Parâmetros de Funções - 12/05/2025 
+
+'''
+10. Você trabalha com análise de audiência na Rede Globo e precisa retornar
+os valores máximo e mínimo de uma lista de índices de audiência.
+
+Implemente a função audiencia_extremos() e atribua os 
+valores máximo e mínimo às variáveis maximo e minimo via desempacotamento. 
+Imprima os dois valores, um por linha.
+'''
+
+# def audiencia_extremos(audiencias):
+#   maior = max(audiencias)
+#   menor = min(audiencias)
+  
+#   print(f'Maior: {maior}')
+#   print(f'Menor: {menor}')
+
+# lista_audiencias = [20, 14, 16, 28, 10, 30]
+# audiencia_extremos(lista_audiencias)
+
+
+
+'''
+11. Padronização de nomes de arquivos do jornalismo com valor padrão upper=False. Implemente padroniza_titulo() e teste.
+'''
+
+# def padroniza_titulo(texto, upper=False):
+#   if upper:
+#     return texto.upper()
+#   else:
+#     return texto.lower()
+  
+# frase = 'Ada é top'
+# print(padroniza_titulo(frase))
+# print(padroniza_titulo(frase, upper=False))
+# print(padroniza_titulo(frase, upper=True))
+
+
+
+'''
+12. Você trabalha com um sistema interno da Globo Educação. 
+Precisa criar uma função que receba o nome de um aluno e retorne suas informações formatadas (curso, média e status).
+
+Dicionário com dados de 4 alunos
+alunos = {
+  'Ana Clara': {'curso': 'Jornalismo', 'media': 8.5, 'status': 'Aprovada'},
+  'Bruno Silva': {'curso': 'Engenharia de Dados', 'media': 6.8, 'status': 'Aprovado'},
+  'Carlos Lima': {'curso': 'Publicidade', 'media': 4.2, 'status': 'Reprovado'},
+  'Débora Souza': {'curso': 'Design Gráfico', 'media': 9.3, 'status': 'Aprovada'}
+}
+'''
+
+alunos = {
+  'Ana Clara': {'curso': 'Jornalismo', 'media': 8.5, 'status': 'Aprovada'},
+  'Bruno Silva': {'curso': 'Engenharia de Dados', 'media': 6.8, 'status': 'Aprovado'},
+  'Carlos Lima': {'curso': 'Publicidade', 'media': 4.2, 'status': 'Reprovado'},
+  'Débora Souza': {'curso': 'Design Gráfico', 'media': 9.3, 'status': 'Aprovada'}
+}
+
+def informacoes(nome):
+  if nome in alunos:
+    return (f'Aluno: {nome}\nCurso: {alunos[nome]['curso']}\nMédia: {alunos[nome]['media']}\nStatus: {alunos[nome]['status']}')
+  
+  return 'Este aluno não está cadastro na base de dados.'
+  
+nome = input('Digite o nome do aluno: ')
+print(informacoes(nome))
