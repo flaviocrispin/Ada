@@ -1,5 +1,5 @@
-import os
-os.system('cls' if os.name == 'nt' else 'clear')
+import csv
+
 
 def carregar_dados_de_arquivo_csv(nome_arquivo):
     dados_com_cabecalho = []
