@@ -67,13 +67,39 @@ print(padroniza_string('Sem passar o SEGUNDO argumento'))
 print(padroniza_string('Passando SEGUNDO argumento True', lower=True))
 print(padroniza_string('Passando SEGUNDO argumento False', lower=False))
 ```
-
 Saída na tela:
 ```
 sem passar o segundo argumento
 passando segundo argumento true
 PASSANDO SEGUNDO ARGUMENTO FALSE
 ```
+
+```py
+def calculadora(x, y, operador = "Soma"):
+    if operador == "Soma":
+        return print (x+y)
+    elif operador == "Sub":
+        return print (x-y)
+    elif operador == "Multi":
+        return print (x*y)
+    else: 
+        return print (x/y)
+
+calculadora (10, 5, "Multi")
+
+
+z = [1, 2, 3, 4, 5,  6, 7, 8, 9]
+
+def divisivel_por_2 (x:list):
+    y = [i for i in x if i % 2 == 0]
+    return y
+
+divisivel_por_2 (z)
+lista_div = divisivel_por_2 (z)
+
+
+```
+
 
 ## 3. Funções com quantidade variável de parâmetros
 
