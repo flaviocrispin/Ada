@@ -20,3 +20,4 @@ def carregar_dados_de_arquivo_csv(nome_arquivo):
     except Exception as e:
         print(f"Erro ao ler o arquivo CSV '{nome_arquivo}': {e}")
         return None
+
