@@ -134,7 +134,7 @@ for d in denominadores:
         div = divisao(1, d)
         
     except ZeroDivisionError:
-        print('infinito')
+        print('Não se pode dividir por zero')
         
     except TypeError:        
         print(f'1/{d}')
